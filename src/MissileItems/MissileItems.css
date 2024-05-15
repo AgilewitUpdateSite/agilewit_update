@@ -1,0 +1,18 @@
+.MissileItemsTopLayer{
+    padding: 8px;
+    border: solid 1px white;
+    margin-top: 10px;
+    font-size: 14px;
+   width: 270px;
+}
+
+
+@media screen and (min-width:767px){
+    .MissileItemsTopLayer{
+        padding: 13px;
+        border: solid 1px white;
+        margin: 10px;
+        width: 290px;
+        font-size: 17px;
+    }
+}

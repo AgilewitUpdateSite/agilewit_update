@@ -58,4 +58,23 @@ const Patrtners = [
     }
 ]
 
-export { ServiceDetails, Achievment, Patrtners }
+const MissileItemsInfo = [
+    {
+        Title: "Improve Your Business",
+        Description: "Help our customers grow and improve their business."
+    },
+    {
+        Title: "Workplace",
+        Description: "Create a workplace where employees can explore, learn and grow"
+    },
+    {
+        Title: "Best Investment",
+        Description: "Deliver the best return on investment and create long-term value for our shareholders."
+    },
+    {
+        Title: "Contributions",
+        Description: "Make contributions to enhance the well-being of the communities where we live and work."
+    },
+]
+
+export { ServiceDetails, Achievment, Patrtners, MissileItemsInfo }

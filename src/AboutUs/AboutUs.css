@@ -30,6 +30,8 @@
     display: flex;
     flex-direction: column;
     align-self: flex-start;
+    height: 150px;
+
 }
 
 .MissionContainer {
@@ -39,7 +41,13 @@
 
 }
 
+.MissileItemsList{
+    padding: 40px;
+ 
+    background: #25AAE1;
+    color: white
 
+}
 
 
 @media screen and (min-width:769px) {
@@ -67,4 +75,17 @@
 
 
     }
+    .MissionInfo{
+        font-size: 20px;
+    }
+    .Misile{
+        height: 400px;
+    }
+    .MissileItemsList{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    
 }
