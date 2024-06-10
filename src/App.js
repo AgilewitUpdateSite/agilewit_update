@@ -31,7 +31,7 @@ function App() {
             <Route path='/DropDown' element={<DropDown/>}/>
             <Route path='/Training' element={<Training/>}/>
             <Route path="/Consen" element={<Consen/>}/>
-            <Route path='/Jobs' element={<Jobs/>}/>
+            <Route path='/CurrentOpenings' element={<Jobs/>}/>
           </Routes>
         </div>
     {Location.pathname!=="/DropDown"&&  Location.pathname !== "/ContactUs"&&<Link to="/ContactUs"><img className="chat-icon" src={ChatIcon} alt="Chat" /> </Link>}

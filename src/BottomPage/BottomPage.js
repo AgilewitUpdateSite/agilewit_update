@@ -23,10 +23,10 @@ const BottomPage = () => {
                         <Link className="Links" to="/AboutUs">
                             <p>{AboutUs}</p>
                         </Link>
-                        <Link to="/Jobs" className="Links" >
+                        <Link to="/CurrentOpenings" className="Links" >
                             <p>{Career}</p>
                         </Link>
-                        <Link to="/Jobs" className="Links" >
+                        <Link to="/CurrentOpenings" className="Links" >
                             <p>{CurrentOpenings}</p>
                         </Link>
                     </div>

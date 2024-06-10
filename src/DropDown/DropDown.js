@@ -18,7 +18,7 @@ const DropDown = () => {
                     </Link>
 
                 <div className="DropDownFirstLayer">
-                    <div className="DropDownSecondLayer">
+                    <div className="DropDownHeadingLayer">
                         <h1>{Expolre}</h1>
                         <h1>{Service}</h1>
                         <h1>{Product}</h1>
@@ -31,7 +31,7 @@ const DropDown = () => {
                                 <p>{AboutUS}</p>
                             </Link>
 
-                            <Link to="/Jobs" className="LinkRemove" >
+                            <Link to="/CurrentOpenings" className="LinkRemove" >
                                 <p>{CurrentOpening}</p>
                             </Link>
                         </div>
