@@ -1,47 +1,36 @@
-import { useState, useEffect } from 'react';
-import Admin from '../Admin/Admin';
-import Employes from '../Employes/Employes';
+
 import Header from "../Header/Header";
 import DesktopHeader from '../DeskTopHeader/DeskTopHeader';
 import ServiceHeaders from '../ServiceHeaders/ServiceHeaders';
 import BottomPage from '../BottomPage/BottomPage';
-import axios from 'axios';
 import './TimeSheet.css';
 
+
+const Employs=[
+    {Name:"Sidd",
+        userame:"siddhumsd@gmail.com",
+        password:"ThalaDhoni",
+        Type:"Employ"
+
+    },
+    {Name:"SidduT",
+        userame:"   ",
+        password:"Thala",
+        Type:"Employe"
+
+    },
+    {Name:"Siddu",
+        userame:"tsiddu@gmail.com",
+        password:"Dhoni@07",
+        Type:"Admin"
+
+    },
+]
+
+
+const Result=Employs.filter((each)=>each.userame==="tsiddu@gmail.com"&&each.password==="Dhoni@07")
+
 const TimeSheet = () => {
-    const [employesInfo, setEmployesInfo] = useState([]);
-    const [passwordStorage, setPasswordStorage] = useState("");
-    const [validation, setValidation] = useState(false);
-   
-    
-    
-    const fetchEmployDetails = async () => {
-        try {
-            const URL = "https://agilewitemploys-default-rtdb.firebaseio.com/.json";
-            const postEmployDetails = await axios.get(URL);
-            const importedEmployesData = Object.values(postEmployDetails.data);
-            setEmployesInfo(importedEmployesData.flat());
-        } catch (error) {
-            console.log(error);
-        }
-    };
-
-
-
-    useEffect(() => {
-        fetchEmployDetails();
-        setPasswordStorage(localStorage.getItem("EmployeePassword"));
-        if (employesInfo.some(each => each.Password === passwordStorage)) {
-            setValidation(true);
-        } else {    
-            setValidation(false);
-            
-           
-        }
-    }, [employesInfo, passwordStorage]);
-
-   
-    console.log(validation);
 
     return (
         <div className='HomeTopLayer'>
@@ -50,7 +39,11 @@ const TimeSheet = () => {
             <div className='SubHomeSecondLayer'>
                 <ServiceHeaders ServiceHeadersInfo="TimeSheet" />
               
-                {validation ? <Employes /> : <Admin />}
+                <h1>TimeSheet</h1>
+                {Result.map((each)=>  <div key={each.userame}>
+                        <p>{each.Name}</p>
+                        {each.Type === "Admin" ? <p>AdminComponent</p> : <p>EmployeeComponent</p>}
+                    </div>)}
               
                 <BottomPage />
             </div>
