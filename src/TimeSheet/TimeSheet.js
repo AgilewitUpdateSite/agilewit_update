@@ -154,6 +154,7 @@ const OneWeek=emplysTimeShett.slice(startingCount,endingCount)
                         <div className='Employee-Details'>
                             <div>
                                 <p>{EmployeeID}</p>
+                                <p>Sidd</p>
                                 <input type='text' className='Input-Value' value={userName} placeholder='Enter your Employee ID' onChange={updateUserName} />
                             </div>
                             <div>
