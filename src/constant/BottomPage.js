@@ -27,7 +27,7 @@ export const BottomPageContent = {
     Training: "Training",
     CurrentOpenings: "Current Openings",
     Service: "SERVICES",
-    Consulting: "CONSULTING",
+    Consulting: "Consulting",
     Product: "PRODUCT",
     Consent: "CONSEN",
     Contact: "CONTACT",
