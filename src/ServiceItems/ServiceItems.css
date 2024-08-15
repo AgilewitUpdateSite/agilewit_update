@@ -28,7 +28,9 @@
     margin-top: 40px;
 
 }
-
+.ServiceDesription{
+    text-align: left;
+}
 
 
 @media screen and (min-width:767px) {
@@ -42,16 +44,16 @@
         margin: 10px;
         width: 140px;
         font-size: 14px;
-        justify-content: space-between;
+       
 
-        /* Aligns flex items vertically to the end */
     }
 
     .SeeMore {
         color: #25AAE1;
         text-decoration: underline;
-        margin-top: 90px;
-
+        margin-top: auto; 
+        display: flex;
+        align-items: center;
     }
 
 }

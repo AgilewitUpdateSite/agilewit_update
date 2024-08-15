@@ -6,7 +6,7 @@ const ServiceItems=(props)=>{
         <div className="ServiceItemTop">
 <img className="ServiceIcon" src={ServiceLogo} alt="Service Logo"/>
 <h3>{ServiceTitle}</h3>
-<p>{ServiceDesription}</p>
+<p className="ServiceDesription">{ServiceDesription}</p>
 
 <h2 className="SeeMore">See More</h2>
         </div>
