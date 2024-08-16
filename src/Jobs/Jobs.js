@@ -16,7 +16,7 @@ const Jobs = () => {
     const [jobArray, setJobArray] = useState([])
     const [jobMode, setJobMode] = useState("OnSite")
     const [packageFilter, setPackageFilter] = useState("<=")
-    const { AdvanceSearch, JobsTypes, JobsCategory, JobsCategoryArray, volunteeropportunities, volunteeropportunitiesDescription, ViewJobs } = JobContent
+    const { AdvanceSearch, JobsTypes, JobsCategory, JobsCategoryArray, volunteeropportunities,volunteeropportunitiesforDesktop, volunteeropportunitiesDescription, ViewJobs } = JobContent
     const FetchData = async () => {
 
         const URL = "https://agilewitjobs-default-rtdb.firebaseio.com/.json"
@@ -167,7 +167,8 @@ const Jobs = () => {
                 <div className='JobsFourthLayer'>
                     <img src={Agilewitswhite} alt="CompanyLogo" className='AgilewitJobsLogo' />
                     <div className='Volunteen-Info'>
-                        <h2>{volunteeropportunities}</h2>
+                        <h2 className='volunteeropportunitiesforMobile'>{volunteeropportunities}</h2>
+                        <h2 className='volunteeropportunitiesforDesktop'>{volunteeropportunitiesforDesktop}</h2>
                         <p>{volunteeropportunitiesDescription}</p>
                         <button className='ViewJobsButton'>{ViewJobs}</button>
                     </div>

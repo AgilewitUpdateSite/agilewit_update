@@ -16,6 +16,9 @@
     font-weight: bold;
 }
 
+.volunteeropportunitiesforDesktop{
+    display: none;
+}
 
 .JobsArray{
     display: flex;
@@ -198,6 +201,12 @@
     
     }
     
+    .volunteeropportunitiesforMobile{
+display: none;
+    }
+    .volunteeropportunitiesforDesktop{
+        display: flex;
+    }
     .JobSecondLayer {
         background: #25AAE1;
         padding: 40px;
