@@ -25,7 +25,7 @@ const {WelcomeTitle,Introduction,MissionHeading,MissionDescription,PartnersOpini
                     <div className='StaffContainer'>
                         <img src={Staff} alt="Staff" />
                         <div className='StaffDescription'>
-                            <h2>{WelcomeTitle}</h2>
+                            <h2 style={{textAlign:"left"}}>{WelcomeTitle}</h2>
                             <p>{Introduction}</p>
                         </div>
                     </div>

@@ -18,7 +18,7 @@ const Counsulting = () => {
     const { OracleTitle, OracleBIstacks, HyperionTitle, HyperionList, OraclefirstBottom, OracleSecondBottom } = OracleContent
     const { IBMDatastageTitle, IBMDatastageSubTitle, IBMDatastageFirstList, DataStageAdvantages, DataStageAdvantagesDescription, IBMDatastageSecondList } = IBMDatastageContent
     const { BigDataAnalyticsTitle, BigDataAnalyticsDescription, BigDataAnalyticsSubTitle, BigDataAnalyticsFirstList, Benifits, BenifitsList } = BigDataAnalyticsContent
-    const{DataScienceTitle,DataScienceDescription,DataSciencSubDescription}=DataScienceContent
+    const{DataScienceTitle,DataScienceTitleforMobile,DataScienceDescription,DataSciencSubDescription}=DataScienceContent
     const UpdatecurrentCunsulting = (each) => {
         setCurrentCunsulting(each)
     }
@@ -100,7 +100,8 @@ const Counsulting = () => {
             <div className='ConsultingTypeTopLayer'>
                 <h1>{DataScienceTitle}</h1>
                 <p>{DataScienceDescription}</p>
-                <h3 style={{color:"#25AAE1"}}>{DataScienceTitle}</h3>
+                <h3 style={{color:"#25AAE1"}} className='volunteeropportunitiesforDesktop'>{DataScienceTitle}</h3>
+                <h3 style={{color:"#25AAE1"}} className='volunteeropportunitiesforMobile'>{DataScienceTitleforMobile}</h3>
                 <p>{DataSciencSubDescription}</p>
             </div>
         );

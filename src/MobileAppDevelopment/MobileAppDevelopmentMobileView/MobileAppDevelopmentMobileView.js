@@ -22,7 +22,7 @@ const MobileAppDevelopmentMobileView = () => {
                 <div className="HomeSecondLayer">
                   
                     <div className="SubHomeSecondLayer">
-                        <ServiceHeaders ServiceHeadersInfo="Developments" />
+                        <ServiceHeaders ServiceHeadersInfo="Mobile App Developments" />
                         <div className='StaffContainer'>
                             <img src={Staff} alt="Staff" />
                             <div className='StaffDescription'>
