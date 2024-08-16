@@ -13,7 +13,7 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
    
-const {WelcomeTitle,Introduction,MissionHeading,MissionDescription,PartnersOpinionTitlePartOne,PartnersOpinionTitlePartTwo,PartnersOpinionTitlePartThree}=AboutUsContents
+const {WelcomeSubTitle,WelcomeTitle,Introduction,MissionHeading,MissionDescription,PartnersOpinionTitlePartOne,PartnersOpinionTitlePartTwo,PartnersOpinionTitlePartThree}=AboutUsContents
  
 
     return (
@@ -25,12 +25,14 @@ const {WelcomeTitle,Introduction,MissionHeading,MissionDescription,PartnersOpini
                     <div className='StaffContainer'>
                         <img src={Staff} alt="Staff" />
                         <div className='StaffDescription'>
-                            <h2 style={{textAlign:"left"}}>{WelcomeTitle}</h2>
-                            <p>{Introduction}</p>
+                        <h4>{WelcomeSubTitle}</h4>
+                            <h2>{WelcomeTitle}</h2>
+                            <p >{Introduction}</p>
                         </div>
                     </div>
                     <div className='MissionContainer'>
                         <div className='MissionInfo'>
+                           
                             <h1>{MissionHeading}</h1>
                             <p className='MissionDescription'>{MissionDescription}</p>
                         </div>

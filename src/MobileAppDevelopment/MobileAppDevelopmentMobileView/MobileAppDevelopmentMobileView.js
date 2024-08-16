@@ -13,7 +13,7 @@ import "./MobileAppDevelopmentMobileView.css"
 import { Link } from 'react-router-dom';
 const MobileAppDevelopmentMobileView = () => {
 
-    const { WelcomeTitle, Introduction } = AboutUsContents
+    const {WelcomeSubTitle, WelcomeTitle, Introduction } = AboutUsContents
     const {AppaleStoreTitle,AppaleStoreDescription,CapsLets,EasyCustomize,EasyCustomizeDescription,PowerfullOption,PowerfullOptionDescription}=MobileDevelopment
     return (
         <div className="MobileAppDevelopmentMobileViewTopLayer">
@@ -26,6 +26,7 @@ const MobileAppDevelopmentMobileView = () => {
                         <div className='StaffContainer'>
                             <img src={Staff} alt="Staff" />
                             <div className='StaffDescription'>
+                            <h4>{WelcomeSubTitle}</h4>
                                 <h2>{WelcomeTitle}</h2>
                                 <p>{Introduction}</p>
                             </div>
