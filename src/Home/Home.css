@@ -1,30 +1,20 @@
-/* General Styles */
+
 .HomeTopLayer {
     color: black;
-    
-   
 }
 
-/* Intro Description for Mobile */
+
 .IntroDescription {
     font-family: Neue Haas Grotesk Display Pro;
     font-size: 20px;
     font-style: italic;
-
-
     text-align: center;
     width: 285px;
-    margin-left: 60px;
+    margin-left: 50px;
     height: 102px;
-
-
-
-
-
-
 }
 
-/* Adjusting the Home Introduction Section for Mobile */
+
 .HomeIntroduction {
     display: flex;
     flex-direction: column;
@@ -68,8 +58,6 @@ text-align: center;
     margin: 0 auto;
     width: 90%;
 }
-
-/* HomePage Description for Mobile */
 .HomePageDescription {
     padding: 20px;
     background: #EBFBFF;
@@ -87,7 +75,7 @@ text-align: center;
     text-align: center;
 }
 
-/* Client Assistance Section */
+
 .ClientAssistance {
     font-size: 14px;
     text-align: center;
@@ -99,7 +87,7 @@ text-align: center;
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%); /* Adjust based on logo container's total width */
+        transform: translateX(-100%); 
     }
 }
 
@@ -109,7 +97,7 @@ text-align: center;
     justify-content: center;
     overflow: hidden;
     height: 100px;
-    animation: scroll 20s linear infinite; /* Move this here to ensure it's applied */
+    animation: scroll 20s linear infinite;
 }
 
 .ClientCompanyLogo {
@@ -133,8 +121,6 @@ text-align: center;
 .AgilewitLogoBlue {
     display: none;
 }
-
-/* Achievements Section */
 .Achievements {
     padding: 30px;
     background: #25AAE1;
@@ -143,7 +129,7 @@ text-align: center;
     flex-direction: row;
 }
 
-/* Partners Opinion Section */
+
 .PartnersOpinion {
     padding: 30px;
     background: #EBFBFF;

@@ -31,13 +31,14 @@ const Consen = () => {
                         </ol>
                     </div>
                     <img src={LogIn} alt="Login" className='LoginPic' />
-                    <img src={DocumentUpload} alt="Document Upload" className='UploadDocument' />
+                    <img src={DocumentUpload} alt="Document Upload" className='UploadDocument volunteeropportunitiesforDesktop' />
                     <div className='ConsenList'>
                         <h3>{LogInDocuments}</h3>
                         <ol>
                             {LogInDocumentsArray.map((each) => <li>{each}</li>)}
                         </ol>
                     </div>
+                    <img src={DocumentUpload} alt="Document Upload" className='UploadDocument volunteeropportunitiesforMobile' />
                 </div>
                 <BottomPage />
             </div>
