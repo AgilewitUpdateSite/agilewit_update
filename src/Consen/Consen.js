@@ -7,7 +7,7 @@ import { ConsenContent, } from '../constant/ConsenContent'
 import LogIn from '../Assets/LogIn.svg'
 import "./Consen.css"
 const Consen = () => {
-    const { ConcenTitle, ConcenDescription, DocumentUpload, LogInTitle, LoginArray, LogInDocuments, LogInDocumentsArray } = ConsenContent
+    const { ConcenTitle, ConcenDescription,ConcenDescriptionforMobile, DocumentUpload, LogInTitle, LoginArray, LogInDocuments, LogInDocumentsArray } = ConsenContent
     return (
         <div className='HomeTopLayer'>
             <Header />
@@ -18,7 +18,8 @@ const Consen = () => {
                     <img src={ConsenLogo} alt="ConsenLogo" />
                     <div className='ConsenContent'>
                         <h3>{ConcenTitle}</h3>
-                        <p>{ConcenDescription}</p>
+                        <p className='volunteeropportunitiesforDesktop ConcenDescription'>{ConcenDescription}</p>
+                        <p className='volunteeropportunitiesforMobile'>{ConcenDescriptionforMobile}</p>
                     </div>
                 </div>
                 <div className='ConseThirdLayer'>

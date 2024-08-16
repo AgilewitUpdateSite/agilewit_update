@@ -65,12 +65,18 @@ li {
 
     .ConsenSecondLayer {
         background: #EBFBFF;
-        padding: 40px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: end;
+        
+        }
 
-    }
+        .ConcenDescription{
+     text-align: left;
+    
+        }
+
+
 
     .ConsenContent {
         width: 350px;
