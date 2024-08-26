@@ -268,7 +268,6 @@ const UpdateJobMode = (event) => {
                         {CountryJobs.map((each, index) => <JobItems key={index} JobItemInfo={each} />)}
                     </div>
 
-
                 </div>
 
                 <div className='JobsFourthLayer'>
